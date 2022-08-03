@@ -1,0 +1,22 @@
+.search {
+    /* margin-top: 10px; */
+    /* border: 1px solid blue; */
+    border-radius: 10px;
+}
+
+.search__form {
+
+}
+
+.search__input {
+    margin: 0;
+    padding: 0;
+    /* width: 100%; */
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+.search__input:focus {
+    background-color: rgb(217, 246, 255);
+}

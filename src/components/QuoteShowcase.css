@@ -1,0 +1,23 @@
+.showcase {
+    /* border: 1px solid magenta; */
+    margin-top: 16px;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(210, 252, 255, 0.401);
+    border-radius: 16px;
+
+}
+
+.showcase__description {
+    margin: 10px 0;
+    align-self: flex-start;
+    font-size: 24px;
+}
+
+.showcase__author {
+    align-self: flex-end;
+    font-size: 16px;
+}

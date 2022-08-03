@@ -1,0 +1,45 @@
+.list__container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    padding: 20px;
+    border: 1px solid magenta;
+    width: 100%;
+    /* justify-self: center; */
+}
+
+.list__item {
+    /* padding: 10px; */
+    border: 1px solid red;
+    /* min-width: 50px; */
+    /* max-width: 400px; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    max-width: 200px;
+    padding: 10px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.list__item:hover {
+    background-color: rgb(225, 243, 255);
+}
+
+
+
+
+.list__description {
+    font-size: 16px;
+    justify-self: center;
+    border: 1px solid green;
+}
+
+.list__author {
+    border: 1px solid pink;
+}

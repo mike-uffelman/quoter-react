@@ -1,0 +1,14 @@
+.quote-display {
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    /* width: 100%; */
+    height: 500px;
+    border: 1px solid blue;
+    /* max-height: 100vh; */
+    /* border: 1px solid red; */
+    /* overflow: scroll; */
+
+
+}
