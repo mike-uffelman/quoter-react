@@ -1,45 +1,68 @@
 .list__container {
     display: flex;
-    flex-direction: row;
-    overflow-x: scroll;
-    padding: 20px;
-    border: 1px solid magenta;
-    width: 100%;
-    /* justify-self: center; */
+    flex-direction: column;
+    align-items: center;
+    /* margin: 16px 0; */
+    height: 100%;
+    padding: 0 10px;
+    
+    /* overflow-x: scroll; */
+    /* width: 100%; */
 }
 
 .list__item {
-    /* padding: 10px; */
-    border: 1px solid red;
-    /* min-width: 50px; */
-    /* max-width: 400px; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* flex-direction: column; */
-    max-width: 200px;
+    min-width: 100%;
     padding: 10px;
-    min-height: 100px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex: 1 1 100px;
+    align-items: flex-end;
+    justify-content: space-between;
     cursor: pointer;
-
+    background-color: rgb(237, 237, 237);
+    border-radius: 10px;
+    transition: all ease 300ms;
+    margin: 8px;
+    line-height: 1.5;
 }
 
 .list__item:hover {
-    background-color: rgb(225, 243, 255);
+    background-color: rgb(255, 225, 254);
+    transition: all ease 300ms;
 }
-
-
-
 
 .list__description {
     font-size: 16px;
-    justify-self: center;
-    border: 1px solid green;
+    justify-self: flex-start;
+    margin-bottom: 10px;
 }
 
 .list__author {
-    border: 1px solid pink;
+
+}
+
+@media screen and (min-width: 500px) {
+    .list__container {
+        /* width: 100%; */
+        flex-direction: row;
+        padding: 16px;
+    }
+
+    .list__item {
+        /* max-width: 200px; */
+        min-width: 250px;
+        height: 100%;
+        /* padding: 10px; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* flex: 1 1 100px; */
+        /* align-items: flex-end; */
+        /* justify-content: space-between; */
+        /* cursor: pointer; */
+        /* background-color: rgb(237, 237, 237); */
+        /* border-radius: 10px; */
+        /* transition: all ease 300ms; */
+        /* margin: 8px; */
+        /* flex: 1 0 200px; */
+    }
 }

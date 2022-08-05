@@ -8,6 +8,7 @@ import HeadingNav from './HeadingNav';
 
 
 class App extends React.Component {
+    
     state = { quotes: [], history: [] };
 
     onFormSubmit = async term => {
@@ -50,10 +51,14 @@ class App extends React.Component {
     render() {
         return (
             <div className='application'>
-                <HeadingNav />
-                <SearchBar onFormSubmit={this.onFormSubmit}/>
-                <QuoteShowcase quote={this.state.displayQuote}/>
-                <QuoteDisplay onQuoteSelect={this.onQuoteSelect} quotes={this.state.quotes}/>
+                <div className='application__fixed'>
+                    <HeadingNav />
+                    <SearchBar onFormSubmit={this.onFormSubmit}/>
+                    <QuoteShowcase quote={this.state.displayQuote} />
+                </div>
+                <div className='application__list'>
+                    <QuoteDisplay onQuoteSelect={this.onQuoteSelect} quotes={this.state.quotes}/>
+                </div>
             </div>
         )
     }

@@ -7,7 +7,7 @@ const QuoteDisplay = ({ quotes, onQuoteSelect }) => {
     
     if(!quotes || quotes.length === 0) {
         console.log('no quotes')
-        return <div>Please search...</div>
+        return;
     }
     
     return (
