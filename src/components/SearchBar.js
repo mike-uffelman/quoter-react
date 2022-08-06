@@ -1,18 +1,34 @@
 import './SearchBar.css';
+import { FaRandom } from 'react-icons/fa';
 import React from 'react';
 
 class SearchBar extends React.Component {
     // state = { term: '', category: '' };
-    state = { term: '' };
+    state = { term: '', queryType: '' };
 
 
     onInputChange = (e) => {
-        this.setState({ term: e.target.value })
+        this.setState({ term: e.target.value.toLowerCase() })
+    }
+
+    onTypeChange = (e) => {
+        this.setState({ queryType: e.target.value.toLowerCase() })
     }
 
     onFormSubmit = e => {
         e.preventDefault();
-        this.props.onFormSubmit(this.state.term);
+        if(this.state.term === '') return;
+        this.props.onFormSubmit(this.state);
+        
+    }
+
+    onRandBtn = e => {
+        e.preventDefault();
+        this.props.onRandBtn();
+    }
+
+    componentDidUpdate() {
+        console.log(this.state)
     }
 
     // render function to return JSX
@@ -20,9 +36,17 @@ class SearchBar extends React.Component {
         return (
             <div className='search'>
                 <form className='search__form' onSubmit={this.onFormSubmit}>
-                        {/* <label className='search__label'>Search:</label> */}
+                    <div className='input__container'>
                         <input className='search__input' type='text' placeholder='Search keywords' value={this.state.term} onChange={this.onInputChange} />
+                        <select className='search__select' onChange={this.onTypeChange}>
+                            <option value="">Select</option>
+                            <option value="tag">Tag</option>
+                            <option value="author">Author</option>
+                        </select> 
+                    </div>
+                        
                 </form>
+                <button onClick={this.onRandBtn} className='search__random btn'><FaRandom /></button>
             </div>
         )
     }

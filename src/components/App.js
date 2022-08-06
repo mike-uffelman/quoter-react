@@ -8,52 +8,63 @@ import HeadingNav from './HeadingNav';
 
 
 class App extends React.Component {
-    
     state = { quotes: [], history: [] };
 
-    onFormSubmit = async term => {
-        console.log('before lookup: ', term)
-        const response = await quoter.get('/quotes', {
-            params: {
-                tags: term
+    axiosParams({term, queryType}) {
+        if(queryType === 'tag') {
+            return {
+                params: {
+                    tags: term
+                }
             }
-        });
-        console.log(term);
-        console.log(response.data.results);
+        }
 
+        if(queryType === 'author') {
+            return {
+                params: {
+                    author: term
+                }
+            }
+        }
+    }
 
-        console.log('onFormSubmit - return term: ', response.data)
+    // fix build fetch, can use just one response object, the params are whats chanign not the endpoint string
+    buildFetch = async (params) => {
+        const response = await quoter.get('/quotes', await this.axiosParams(params));
+        return response;
+    }
+
+    onFormSubmit = async (state) => {
+        const response = await this.buildFetch(state);
 
         this.setState({ 
-            displayQuote: [], 
+            displayQuote: response.data.results[0], 
             quotes: response.data.results
         })
     }
 
-    onQuoteSelect = (quote) => {
-        console.log('selecting this quote to display', quote)
+    onRandBtn = async () => {
+        const response = await quoter.get('/random', {})
 
+        this.setState({
+            displayQuote: response.data
+        })        
+    }
+
+    onQuoteSelect = (quote) => {
         this.setState({ displayQuote: quote })
     }
 
-    componentDidMount() {
-        console.log(this.state);
-    }
-
-    // want to update state.history with prior searches on each update
-    componentDidUpdate() {
-        const prevHistory = this.state.quotes;
-        console.log('previous history: ', prevHistory)
-        console.log(this.state.displayQuote);
-        // this.setState({ history: this.state.quotes})
-    }
+    // componentDidUpdate() {
+    //     console.log(this.state.displayQuote);
+    // }
 
     render() {
         return (
             <div className='application'>
                 <div className='application__fixed'>
                     <HeadingNav />
-                    <SearchBar onFormSubmit={this.onFormSubmit}/>
+                    <SearchBar onRandBtn={this.onRandBtn} onFormSubmit={this.onFormSubmit}/>
                     <QuoteShowcase quote={this.state.displayQuote} />
                 </div>
                 <div className='application__list'>

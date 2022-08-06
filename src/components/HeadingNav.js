@@ -6,7 +6,7 @@ const HeadingNav = () => {
     return (
         <header>
             <h3>Quoter</h3>
-            <p>Search for quotes by keyword...</p>
+            <p>Search for quotes by keywords and authors!</p>
         </header>
     )
 }

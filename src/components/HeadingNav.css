@@ -2,14 +2,15 @@ header {
     display: flex;
     align-items: flex-end;
     margin-bottom: 20px;
+    /* border: 1px solid blue; */
     /* background-color: rgb(250, 250, 250); */
 }
 
-header h3 {
-    
-}
+/* header h3 {
+} */
 
 header p {
     font-size: 12px;
     margin-left: 20px;
+    padding-bottom: 1px;
 }
