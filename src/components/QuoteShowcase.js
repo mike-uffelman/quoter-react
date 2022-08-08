@@ -47,9 +47,10 @@ class QuoteShowcase extends React.Component {
     }
 
     renderBuild() {
+        
         console.log(this.props.quote);
         if(this.props.quote === undefined || this.props.quote.length === 0) {
-            return <div ref={this.showcaseBG}></div>;
+            return <div className='showcase__error' ref={this.showcaseBG}>No quotes found, please try a new search!</div>;
         }
 
 

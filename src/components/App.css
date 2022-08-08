@@ -1,59 +1,51 @@
 .application {
-    /* padding-top: 10px; */
-    /* background-color: rgb(251, 251, 251); */
-    font-family: 'Raleway', sans-serif;
-    /* margin: 10px; */
-    /* padding: 10px; */
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    /* width: 100%; */
-    height: 100vh;
+    justify-content: space-between;    font-family: 'Raleway', sans-serif;
+    align-self: center;
+
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+
     overflow: hidden;
     transition: all ease 400ms;
-    /* background-image: linear-gradient(to bottom, gray, white); */
-
 }
 
 .application__fixed {
-    position: relative;
-    /* z-index: 9999; */
-    /* top: 0; */
-    /* height: auto; */
-    /* border: 1px solid red; */
     display: flex;
-    flex: 0 1;
-    padding: 10px;
-    /* background-image: linear-gradient(to bottom, gray, white); */
-
-    /* background-color: rgb(250, 250, 250);  */
-    width: 100%;
-    transition: all ease 400ms;
-
     flex-direction: column;
-    /* width: 100%; */
+    flex: 1 1;
+    position: relative;
+    width: 100%;
+
+    padding: 1rem;
+
+    transition: all ease 400ms;
 }
 
 .application__list {
-    
-    position: relative;
-    /* top: 275px; */
     display: flex;
-    flex: 1;
-    /* justify-content: flex-start; */
+    flex: 2;
+
+    position: relative;
+
     overflow: scroll;
     transition: all ease 400ms;
-
-    width: 100%;
-
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 31.25rem) {
+    .application {
+        padding: 1rem;
+
+    }
     .application__fixed {
-        flex: 2 1;
+        flex: 1 0;
+        padding: 0;
+
     }
     .application__list {
-        flex: 1 0;
+        flex: 2 0;
     }   
 }
+

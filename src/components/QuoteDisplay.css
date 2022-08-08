@@ -1,6 +1,6 @@
 .quote-display {
-    position: relative;
     display: flex;
     align-items: center;
-    height: auto;
+
+    position: relative;
 }

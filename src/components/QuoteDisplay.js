@@ -3,7 +3,6 @@ import React from 'react';
 import QuoteDetail from './QuoteDetail';
 
 const QuoteDisplay = ({ quotes, onQuoteSelect }) => {
-    console.log(quotes);
     
     if(!quotes || quotes.length === 0) {
         console.log('no quotes')

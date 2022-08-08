@@ -25,6 +25,7 @@ class SearchBar extends React.Component {
     onRandBtn = e => {
         e.preventDefault();
         this.props.onRandBtn();
+        this.setState({ term: '', queryType: '' })
     }
 
     componentDidUpdate() {
@@ -37,12 +38,13 @@ class SearchBar extends React.Component {
             <div className='search'>
                 <form className='search__form' onSubmit={this.onFormSubmit}>
                     <div className='input__container'>
-                        <input className='search__input' type='text' placeholder='Search keywords' value={this.state.term} onChange={this.onInputChange} />
-                        <select className='search__select' onChange={this.onTypeChange}>
+                    <select className='search__select' onChange={this.onTypeChange} >
                             <option value="">Select</option>
                             <option value="tag">Tag</option>
                             <option value="author">Author</option>
-                        </select> 
+                        </select>
+                        <input className='search__input' type='text' placeholder='Search keywords' value={this.state.term} onChange={this.onInputChange} />
+                         
                     </div>
                         
                 </form>

@@ -8,7 +8,7 @@ import HeadingNav from './HeadingNav';
 
 
 class App extends React.Component {
-    state = { quotes: [], history: [] };
+    state = { quotes: [], displayQuote: [] };
 
     axiosParams({term, queryType}) {
         if(queryType === 'tag') {
@@ -16,48 +16,47 @@ class App extends React.Component {
                 params: {
                     tags: term
                 }
-            }
-        }
+            };
+        };
 
         if(queryType === 'author') {
             return {
                 params: {
                     author: term
                 }
-            }
-        }
-    }
+            };
+        };
+    };
 
     // fix build fetch, can use just one response object, the params are whats chanign not the endpoint string
     buildFetch = async (params) => {
         const response = await quoter.get('/quotes', await this.axiosParams(params));
         return response;
-    }
+    };
 
     onFormSubmit = async (state) => {
+        if(state.queryType.length === 0) return;
+
         const response = await this.buildFetch(state);
 
         this.setState({ 
             displayQuote: response.data.results[0], 
             quotes: response.data.results
-        })
-    }
+        });
+    };
 
     onRandBtn = async () => {
         const response = await quoter.get('/random', {})
 
         this.setState({
+            quotes: [],
             displayQuote: response.data
-        })        
-    }
+        });        
+    };
 
     onQuoteSelect = (quote) => {
         this.setState({ displayQuote: quote })
     }
-
-    // componentDidUpdate() {
-    //     console.log(this.state.displayQuote);
-    // }
 
     render() {
         return (
