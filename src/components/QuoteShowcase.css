@@ -16,7 +16,7 @@
     padding: 1rem 2.5rem;
     
     background-image: linear-gradient(51deg, rgba(39, 163, 171, 1.0) 9.6%, rgba(247, 196, 174, 0.7) 48.9%);
-
+    box-shadow: 0 0 1rem black;
     transition: all ease 400ms;
 }
 

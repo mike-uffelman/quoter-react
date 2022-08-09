@@ -6,6 +6,7 @@
 .search__form {
     width: 100%;
     display: flex;
+    /* filter: drop-shadow(0 0 .5rem black); */
 }
 
 .input__container {
@@ -27,7 +28,9 @@
     border: none;
 
     cursor: pointer;
+
 }
+
 
 .search__random svg {
     fill: rgb(85, 85, 85);
@@ -37,7 +40,7 @@
 }
 
 .search__random:hover > svg {
-    fill: orange;
+    fill: rgb(76, 94, 255);
     transition: all ease 300ms;
 }
 
@@ -76,8 +79,15 @@
     cursor: pointer;
 }
 
+.search__select:focus {
+    outline: 2px solid rgb(76, 94, 255);
+}
+
 .search__input:focus {
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
+    outline: 2px solid rgb(76, 94, 255);
+    /* filter: drop-shadow(0 0 .5rem gray); */
+
 }
 
 @media screen and (min-width: 31.25rem) {

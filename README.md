@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+# quoter
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-## Available Scripts
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
 
-In the project directory, you can run:
+<h3 align="center">quoter</h3>
+<br>
+  <p align="center">
+    A responsive famous quote lookup app.
+    <br />
+    <a href="#">View Demo</a>
+    ·
+    <a href="https://github.com/mike-uffelman/quoter-react-practice/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/mike-uffelman/quoter-react-practice/issues">Request Feature</a>
+  </p>
+</div>
+<br>
 
-### `npm start`
+<!-- TABLE OF CONTENTS -->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Table of Contents
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<details>
+  <summary>Quoter App</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li><a href="#getting-started">Getting Started</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
+<br>
+<!-- ABOUT THE PROJECT -->
 
-### `npm test`
+## About The Project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This is a small quote lookup application built to practice using React.js. The scope of the project was to create a class based application which utilizes stateful components which update and (re)render as the state changes per user inputs. Many features were utilized including JSX, state, props, refs, lists/kes, event handling, and controlled components.
 
-### `npm run build`
+The Quotable API is used with the endpoints for "tags" and "authors" to retrieve a list of quotes for the user to select and display in the showcase.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Additional minor features include, practice using flexbox and grid, and applying a linear gradient generator to the showcase quotes background.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<br><br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+put an image here
+[![weather showcase][product-screenshot]]('./images/weather-showcase.png')
 
-### `npm run eject`
+<br>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Built With
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+| Technology Stack                                               | Description       |
+| -------------------------------------------------------------- | ----------------- |
+| JavaScript                                                     |                   |
+| [reactjs](https://reactjs.org/)                                | front-end library |
+| [quotable](https://github.com/lukePeavey/quotable#list-quotes) | quote API lookup  |
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<p align="right">(<a href="#quoter">back to top</a>)</p>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<!-- GETTING STARTED -->
 
-## Learn More
+## Getting Started
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Open the [live demo here](https://main--cranky-booth-057572.netlify.app/).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p align="right">(<a href="#quoter">back to top</a>)</p>
 
-### Code Splitting
+<!-- LICENSE -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## License
 
-### Analyzing the Bundle Size
+Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<p align="right">(<a href="#quoter">back to top</a>)</p>
 
-### Making a Progressive Web App
+<!-- CONTACT -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contact
 
-### Advanced Configuration
+[![LinkedIn][linkedin-shield]][linkedin-url]
+[![GitHub][github-shield]][github-url]
+[![Project][project-shield]][project-repo]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<p align="right">(<a href="#quoter">back to top</a>)</p>
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[issues-shield]: https://img.shields.io/github/issues/mike-uffelman/quoter-react-practice.svg?labelcolor=green
+[issues-url]: https://github.com/mike-uffelman/quoter-react-practice/issues
+[license-shield]: https://img.shields.io/github/license/mike-uffelman/quoter-react-practice.svg
+[license-url]: https://github.com/mike-uffelman/quoter-react-practice/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/LinkedIn-profile-blue
+[linkedin-url]: https://www.linkedin.com/in/michael-uffelman-34289521/
+[github-url]: https://github.com/mike-uffelman
+[github-shield]: https://img.shields.io/badge/GitHub-profle-orange
+[project-shield]: https://img.shields.io/badge/GitHub-repo-gray?color=#6cc644
+[project-repo]: https://github.com/mike-uffelman/quoter-react-practice
+[product-screenshot]: public/images/weather-showcase.png

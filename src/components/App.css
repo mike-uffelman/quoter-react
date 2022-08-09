@@ -19,7 +19,7 @@
     position: relative;
     width: 100%;
 
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
 
     transition: all ease 400ms;
 }
@@ -31,7 +31,12 @@
     position: relative;
 
     overflow: scroll;
+    scrollbar-width: none;
     transition: all ease 400ms;
+}
+
+.application__list::-webkit-scrollbar {
+    display: none;
 }
 
 @media screen and (min-width: 31.25rem) {
