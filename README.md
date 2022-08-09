@@ -11,9 +11,9 @@
 <h3 align="center">quoter</h3>
 <br>
   <p align="center">
-    A responsive famous quote lookup app.
+    A responsive famous quote lookup app built with React
     <br />
-    <a href="#">View Demo</a>
+    <a href="https://stellar-narwhal-132175.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/mike-uffelman/quoter-react-practice/issues">Report Bug</a>
     ·
@@ -45,16 +45,30 @@
 
 ## About The Project
 
-This is a small quote lookup application built to practice using React.js. The scope of the project was to create a class based application which utilizes stateful components which update and (re)render as the state changes per user inputs. Many features were utilized including JSX, state, props, refs, lists/kes, event handling, and controlled components.
+This is a small quote lookup application built with the React.js library. The primary scope of this project is to showcase and practice the React basics in a small class based application. The application focuses on and features the usage of stateful components, i.e. as the user interacts with and makes changes to the components, the components will rerender reflecting the state change according to the logic built into the component.
 
-The Quotable API is used with the endpoints for "tags" and "authors" to retrieve a list of quotes for the user to select and display in the showcase.
+Additional features and concepts within the application include:
 
-Additional minor features include, practice using flexbox and grid, and applying a linear gradient generator to the showcase quotes background.
+- JSX - templating markup with logic, returned from each component for rendering in the browser
+- state - components state variables housed and maintained component specific data, e.g. an array of quotes to be rendered and a selected quote to display in the showcase
+- props - for passing state variables and callback functions to child variables for additional processing or to lift state up to the parent component
+- refs - refs are used in this application to access the background-image property of the quote showcase, everytime a quote is displayed in the showcase a new linear-gradient background image is generated and added to the element
+- lists - retrieved quotes from an API call are mapped over and returned as a JSX list item and rendered in the browser
+- event handling - React specific events (e.g. onSubmit, onChange, onClick) within the JSX are used to handle user events which then execute a callback function for further processing
+- controlled components - ensures the state keeps and maintains all information about the component for processing and rendering, as opposed to uncontrolled where the information would have to be accessed through the HTML (e.g. document.querySelector)
 
-<br><br>
+The [Quotable API](https://github.com/lukePeavey/quotable#list-quotes) is the source used for retrieving user searches.
 
-put an image here
-[![weather showcase][product-screenshot]]('./images/weather-showcase.png')
+- "/tags" and "/authors" are the currently implemented endpoints for calls to the API, and will return a list of quotes for the user to select and display in the showcase.
+
+Additional concepts and features include:
+
+- flexbox and grid
+- Linear gradient generator to apply background-image to the showcase quotes
+
+<br>
+
+[![quote showcase][quote-demo]]('./images/quote_demo.gif') [![quote showcase][quote-desktop]]('./images/quote_desktop.png')
 
 <br>
 
@@ -72,7 +86,7 @@ put an image here
 
 ## Getting Started
 
-Open the [live demo here](https://main--cranky-booth-057572.netlify.app/).
+Open the [live demo here](https://stellar-narwhal-132175.netlify.app/).
 
 <p align="right">(<a href="#quoter">back to top</a>)</p>
 
@@ -104,4 +118,5 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [github-shield]: https://img.shields.io/badge/GitHub-profle-orange
 [project-shield]: https://img.shields.io/badge/GitHub-repo-gray?color=#6cc644
 [project-repo]: https://github.com/mike-uffelman/quoter-react-practice
-[product-screenshot]: public/images/weather-showcase.png
+[quote-demo]: public/images/quote_demo.gif
+[quote-desktop]: public/images/quote_desktop.png
