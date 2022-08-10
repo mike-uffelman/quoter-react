@@ -79,7 +79,7 @@ The **[Quotable API](https://github.com/lukePeavey/quotable#list-quotes)** is th
 
 ## Demo
 
-<img src='./public/images/quote_demo.gif' width='300' style="border: 1px solid black; padding: 5px">
+<img src='./public/images/quote_demo2.gif' width='300' style="border: 1px solid black; padding: 5px">
 <img src='./public/images/quote_desktop.png' width='550' style="border: 1px solid black; padding: 5px">
 
 <p align="right">(<a href="#quoter">back to top</a>)</p>
@@ -132,5 +132,5 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [github-shield]: https://img.shields.io/badge/GitHub-profle-orange
 [project-shield]: https://img.shields.io/badge/GitHub-repo-gray?color=#6cc644
 [project-repo]: https://github.com/mike-uffelman/quoter-react-practice
-[quote-demo]: ./public/images/quote_demo.gif
+[quote-demo]: ./public/images/quote_demo2.gif
 [quote-desktop]: ./public/images/quote_desktop.png
