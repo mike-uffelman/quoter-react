@@ -5,7 +5,7 @@ import QuoteDetail from './QuoteDetail';
 const QuoteDisplay = ({ quotes, onQuoteSelect }) => {
     
     if(!quotes || quotes.length === 0) {
-        console.log('no quotes')
+        // console.log('no quotes')
         return;
     }
     
