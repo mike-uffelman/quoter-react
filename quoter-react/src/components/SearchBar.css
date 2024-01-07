@@ -1,0 +1,120 @@
+.search {
+    width: 100%;
+    display: flex;
+}
+
+.search__form {
+    width: 100%;
+    display: flex;
+    /* filter: drop-shadow(0 0 .5rem black); */
+}
+
+.input__container {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+}
+
+.search__random {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 1rem;
+    width: 5rem;
+
+    border-radius: 1rem;
+    border: none;
+    background-color: rgb(230, 230, 230);
+
+    cursor: pointer;
+
+
+}
+
+
+.search__random svg {
+    fill: rgb(85, 85, 85);
+
+    transform: scale(1.75);
+    transition: all ease 300ms;
+}
+
+.search__random:hover > svg {
+    fill: rgb(76, 94, 255);
+    transition: all ease 300ms;
+}
+
+.search__random:focus {
+    outline: 2px solid rgb(76, 94, 255);
+    outline-offset: -2px;
+}
+
+.search__input {
+    position: relative;
+    z-index: 100;
+    display: flex;
+
+    /* margin: 0; */
+    padding: 1rem 1rem;
+    width: 100%;
+
+    border-radius: 1rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 1px solid lightgray;
+    /* border-left: none; */
+
+    font-size: 1.6rem;
+}
+
+.search__select {
+    position: relative;
+    z-index: 101;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-right: 2px; */
+
+    /* width: 100%; */
+    border-radius: 1rem;
+    border: 1px solid lightgray;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    /* border-right: none; */
+
+    background-color: rgb(230, 230, 230);
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+
+    transition: all ease 300ms;
+}
+
+.search__select:hover {
+    cursor: pointer;
+}
+
+.search__select:focus {
+    outline: 2px solid rgb(76, 94, 255);
+    outline-offset: -2px;
+}
+
+.search__input:focus {
+    /* border: 1px solid gray; */
+    outline: 2px solid rgb(76, 94, 255);
+    /* filter: drop-shadow(0 0 .5rem gray); */
+    outline-offset: -2px;
+
+}
+
+@media screen and (min-width: 31.25rem) {
+    .search__select {
+        font-size: 1.6rem;
+        transition: all ease 300ms;
+    }
+    .search__random {
+        width: 10rem;
+    }
+}

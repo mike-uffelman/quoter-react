@@ -1,0 +1,7 @@
+.quote-display {
+    display: flex;
+    align-items: center;
+    
+    position: relative;
+}
+

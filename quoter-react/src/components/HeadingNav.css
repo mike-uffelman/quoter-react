@@ -1,0 +1,16 @@
+header {
+    display: flex;
+    align-items: flex-end;
+
+    margin-bottom: 2rem;
+}
+
+header h3 { 
+    font-size: 2.25rem;
+} 
+
+header p {
+    font-size: 1.25rem;
+    margin-left: 2rem;
+    padding-bottom: 1px;
+}
