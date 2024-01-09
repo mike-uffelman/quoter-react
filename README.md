@@ -13,7 +13,7 @@
   <p align="center">
     A responsive famous quote lookup app built with React
     <br />
-    <a href="https://stellar-narwhal-132175.netlify.app/">View Demo</a>
+    <a href="https://quoter-react-app.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/mike-uffelman/quoter-react-practice/issues">Report Bug</a>
     ·
@@ -100,7 +100,7 @@ The **[Quotable API](https://github.com/lukePeavey/quotable#list-quotes)** is th
 
 ## Getting Started
 
-Open the [live demo here](https://stellar-narwhal-132175.netlify.app/).
+Open the [live demo here](https://quoter-react-app.netlify.app/).
 
 <p align="right">(<a href="#quoter">back to top</a>)</p>
 
