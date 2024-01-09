@@ -72,9 +72,13 @@
 .search__select {
     position: relative;
     z-index: 101;
-    padding: .5rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* margin-right: 2px; */
 
+    /* width: 100%; */
     border-radius: 1rem;
     border: 1px solid lightgray;
     border-top-right-radius: 0;
